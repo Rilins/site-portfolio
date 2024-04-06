@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: "Inter", sans-serif;
+    color: var(--text-cor);
+}
+
+:root{
+    --bg-url: url(/imgs/bg-phone.jpg);
+    --text-cor: white;
+    --cor-efeito-transparente: rgba(255, 255, 255, 0.03);
+    --cor-efeito-tranparente-hover: rgba(0, 0, 0, 0.02);
+    --cor-efeito-roxo: rgba(186, 102, 241, 0.178);
+    --cor-efeito-roxo-hover: rgba(185, 102, 241, 0.090);
+    --cor-contorno: rgba(255, 255, 255, 0.5);
+    --cor-luz: rgba(255, 255, 255, 0.02);
+    --modo-img-lampada: url(../imgs/lightbulb-solid.svg);
+}
+
+.light {
+    --bg-url: url(./imgs/bg-phone-light.png);
+    --text-cor: black;
+    --cor-efeito-transparente: rgba(255, 255, 255, 0.03);
+    --cor-efeito-tranparente-hover: rgba(0, 0, 0, 0.02);
+    --cor-efeito-roxo: rgba(186, 102, 241, 0.178);
+    --cor-efeito-roxo-hover: rgba(186, 102, 241, 0.03);
+    --cor-contorno: rgba(255, 255, 255, 0.5);
+    --cor-luz: rgba(255, 255, 255, 0.02);
+    --modo-img-lampada: url(../imgs/lightbulb-regular.svg);
+}
+
+/* Menu */
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    background-color: #0e1644;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .icon {
+    border-radius: 4px;
+    background: var(--cor-efeito-tranparente-hover);
+    padding: 5px;
+    margin-right: 10px;
+    }
+
+    .icon:hover {
+    background: var(--cor-efeito-transparente);
+    }
+    
+}
+
+#modoTela {
+    position: relative;
+    width: 64px;
+
+    button {
+        width: 32px;
+        height: 32px;
+        background: #0e1644 var(--modo-img-lampada) no-repeat center;
+        border: 0;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+}
+
+
+#menu {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    z-index: 10;
+    display: none;
+    text-align: center;
+    width: 20%;
+    margin-right: 10px;
+    list-style: none;
+
+    li {
+        padding: 10px;
+        background: var(--cor-efeito-roxo);
+        border: 1px solid var(--cor-contorno);
+        border-radius: 4px;
+        margin-top: 5px;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+    }
+
+    a {
+        text-decoration: none; 
+        color: var(--text-cor);
+        font-weight: 500;
+
+    }
+
+    li:hover{
+        background: var(--cor-efeito-roxo-hover);
+        border: 1.5px solid var(--text-cor);
+    }
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+

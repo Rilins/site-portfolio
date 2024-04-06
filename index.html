@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd9b2dfa47.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Érica lins</title>
+
+    <style>
+
+        body {
+            background: var(--bg-url) no-repeat top center/cover;
+            height: 100vh;
+        }
+
+        /* Apresentação */
+        .apresentacao {
+        background: var(--cor-efeito-transparente);
+        border-radius: 8px;
+        padding: 24px;
+        margin: 70px 24px 24px 24px;
+        }
+
+        #perfil {
+        text-align: center;
+
+            img {
+                padding-bottom: 10px;
+                width: 25%;
+            }
+
+            #social {
+                display: flex;
+                justify-content: center;
+                font-size: 24px;
+                
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    padding: 16px;
+                    margin: 10px;   
+            
+                    transition: background 0.2s;
+                    border-radius: 50%;
+                }    
+            }
+
+            #social a:hover{
+                background: var(--cor-efeito-roxo);
+            }
+        }
+
+        #texPerfil {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+            p {
+                max-width: 500px;
+                text-align: center;
+                line-height: 1.5;
+                font-size: 18px;
+                
+            }
+
+        }
+
+        /* Seção posters */
+        .projetos {
+            margin: 5px;
+
+            aside {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .poster {
+                margin: 10px 20px 10px;  
+                border-radius: 8px;
+                transition: background 0.2s;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+
+                    div {
+                        margin: 5px;
+                    }
+                }
+
+                img {
+                    margin: 10px;
+                    width: 50%;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                
+                    p {
+                    margin: 10px 20px;
+                    text-align: center;
+                    }
+                }
+            }
+
+            .poster:hover{
+                background: var(--cor-efeito-roxo);
+            }
+        }
+
+
+        @media (min-width: 700px){
+            :root {
+                --bg-url: url(./imgs/bg-darkmode.png);
+
+                #perfil img {width: 15%;}
+
+                aside {flex-direction: row;}
+
+                .poster div p {margin: 5px;}
+                
+            }
+
+            .light {
+                --bg-url: url(./imgs/bg-ligthmode.png);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="modoTela" onclick="modoTela()">
+                <button></button>
+            </div>
+
+            <span class="icon">
+                <a href="javascript:void(0);" onclick="abreMenu()">
+                    <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                </a>
+            </span>
+
+             <ul id="menu">
+                <li><a href="#">Início</a></li>
+                <!--<li><a href="#">contato</a></li>-->
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <div id="perfil">
+                <img id="avatar" src="./imgs/perfil.png" alt="">
+                <h1>Érica Lins</h1>
+
+                <div id="social">
+                    <a href="https://github.com/Rilins" target="_blank">
+                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    </a>
+
+                    <a href="https://instagram.com/ericatlins" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/rilins" target="_blank">
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="texPerfil">
+                <p>
+                    Olá, meu nome é Érica.<br>
+                    Sou apaixonada por tecnologia, atualmente explorando Ux Design e desenvolvimento de aplicações
+                    para dispositivos móveis.
+                        
+                </p>
+            </div>
+
+        </section>
+
+        <section class="projetos">
+            <aside>
+                <div class="poster">
+                    <a href="assets/popucha.html">
+                            <img src="./imgs/postpopucha.png" alt="Poster do design do aplicativo do Popucha">
+                        <div>
+                            <p>Design do aplicativo Popucha Restaurante.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="poster">
+                    <a href="#">
+                        <img src="./imgs/embreve.png" alt="Poster em breve">
+                    
+                        <div>
+                            <p>Design do site da CineAto.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="poster">
+                    <a href="#">
+                        <img src="./imgs/embreve.png" alt="Poster em breve">
+                    
+                        <div>
+                            <p>App e site responsivo da Oncurso.</p>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+            
+        </section>
+    </main>
+
+    
+
+    <footer>
+        feito com <i class="fa-regular fa-heart"></i> por <a href="#">Érica Lins</a>
+    </footer>
+
+    <script src="/assets/script.js"></script>
+</body>
+</html>
