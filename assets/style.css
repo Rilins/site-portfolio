@@ -10,7 +10,7 @@ body * {
 }
 
 :root{
-    --bg-url: url(../imgs/bg-phone.jpg);
+    --bg-url: url(./imgs/bg-phone.jpg);
     --text-cor: white;
     --cor-efeito-transparente: rgba(255, 255, 255, 0.03);
     --cor-efeito-tranparente-hover: rgba(0, 0, 0, 0.02);
