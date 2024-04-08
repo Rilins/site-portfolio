@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd9b2dfa47.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,14 @@
             background: var(--bg-pag);
         }
 
-        body *{
+        body{
             color: --text-cor;
+            height: 100vh;
         }
 
-        main{ margin-top: 70px;}
+        main{ 
+            margin-top: 70px;
+        }
 
         .post {
 
@@ -99,12 +102,12 @@
                     position: relative;
                     bottom: 90px;
                     height: 53px;
-                    width: 405px;
+                    width: 300px;
                     background: var(--barra-branco);
 
                     h3{
                         padding: 8px;
-                        font-size: 30px;
+                        font-size: 25px;
                         text-align: center;
                         color: var(--text-cor);
                     }
@@ -114,13 +117,13 @@
                     position: relative;
                     bottom: 30px;
                     height: 49px;
-                    width: 425px;
+                    width: 320px;
                     background: var(--barra-preta);
                 }
 
                 .roxo {
                     height: 49px;
-                    width: 439px;
+                    width: 335px;
                     background: var(--barra-roxa);
                 }
             }
@@ -389,7 +392,11 @@
 
             .titleSection{
                 .barra {
-                    .branco {width: 811px;}
+                    .branco {width: 811px;
+                        h3{
+                            font-size: 30px;
+                        }
+                    }
                     .roxo {width: 878px;}
                     .preto {width: 851px;}
                 }
@@ -430,7 +437,7 @@
             </span>
 
              <ul id="menu">
-                <li><a href="/index.html">Início</a></li>
+                <li><a href="../index.html">Início</a></li>
                 <!--<li><a href="#">contato</a></li>-->
             </ul>
         </nav>
