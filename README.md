@@ -12,3 +12,6 @@ Esse projeto foi desenvolvido com as tecnologias:
 
 ## Licença
 Licença MIT
+
+## Licenciamento das Imagens
+As imagens neste projeto são protegidas por direitos autorais. Consulte o arquivo `LICENSE.md` para obter detalhes sobre restrições de uso.
