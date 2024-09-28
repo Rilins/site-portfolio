@@ -2,7 +2,7 @@
 
 ## Projeto
 Página de portfólio para exibir trabalhos.
-[Acesse aqui](https://rilins.github.io/Portfolio/index.html)
+[Acesse aqui](https://rilins.github.io/portfolio/index.html)
 
 ## Tecnologias
 Esse projeto foi desenvolvido com as tecnologias:
