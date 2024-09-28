@@ -1,0 +1,145 @@
+html {
+    background: var(--bg-pag);
+}
+
+body {
+    color: var(--text-cor);
+}
+
+:root {
+    --bg-pag: #102F2F; 
+    --text-cor: white;
+    --cor-obj-pesquisa: #178181;
+    --text-descoberta: #a3a2a2;
+}
+
+.light {
+    --bg-pag: transparent;
+    --text-cor: black;
+    --cor-obj-pesquisa: #99CC00;
+    --text-descoberta: #514F4F;
+}
+
+#principal article .ap-textos div h3 {
+    color: #006666;
+}
+
+#sobre article {
+    background: #061b1d;
+}
+
+#sobre article ul li {
+    color: #006666;
+}
+
+.faixa{
+    background-color: #006666;
+}
+
+.numero-circulo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #99CC00;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pesquisa .blocoEstudo div h3 {
+    color: white;
+    background: var(--cor-obj-pesquisa);
+}
+
+#pesquisa .blocoEstudo .resultado h4 {
+    color: #006666;
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol li .corD {
+    color: #99CC00;
+}
+
+#pesquisa .blocoEstudo .resultado ol li h4 {
+    color: var(--text-descoberta);
+}
+
+#design {
+    background-color: #061b1d;
+    padding: 10px 0;
+}
+
+#design .bloco {
+    margin: 0 auto;
+    display: flex;
+    max-width: 80%;
+}
+
+#design .bloco div {
+    align-content: center;
+}
+
+#design .bloco div p {
+    text-align: start;
+    padding: 10px;
+    color: #a3a2a2;
+}
+
+#design .bloco div img {
+    max-width: 80%;
+}
+
+.cine {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cine img {
+    padding: 20px 0;
+}
+
+.cine-titulo {
+    color: white;
+    background: var(--cor-obj-pesquisa);
+    padding: 5px 10px;
+    margin: 0 35%;
+    font-weight: 400;
+}
+
+.linkado {
+    background: #99CC00;
+}
+
+.linkado:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #415503 0 -3px 0 inset;
+}
+
+.etapas div{
+    background-color: #024848;
+}
+
+@media (max-width: 768px) {
+
+    .faixa {
+        width: 300px;
+    }
+
+    .bloco {
+        flex-direction: column;
+    }
+
+    .cine {
+        flex-direction: column;
+    }
+
+    #pratica .pr-pratica p {
+        text-align: justify;
+        padding: 0 15px;
+    }
+
+}

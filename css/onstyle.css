@@ -1,0 +1,176 @@
+html {
+    background: var(--bg-pag);
+}
+
+body {
+    color: var(--text-cor);
+}
+
+:root {
+    --bg-pag: #3e5385; 
+    --text-cor: white;
+    --cor-obj-pesquisa: #178181;
+    --text-descoberta: #a3a2a2;
+}
+
+.light {
+    --bg-pag: transparent;
+    --text-cor: black;
+    --cor-obj-pesquisa: #99CC00;
+    --text-descoberta: #514F4F;
+}
+
+#principal .ap-imagem {
+    width: 100%;
+    text-align: center;
+}
+
+#principal .ap-imagem img {
+    width: 100%;
+}
+
+#principal article .ap-textos div h3 {
+    color: #40A2E9;
+}
+
+#sobre article {
+    background: #1F2B46;
+}
+
+#sobre article ul li {
+    color: #40A2E9;
+}
+
+#pesquisa .blocoEstudo div h3 {
+    color: #40A2E9;
+}
+
+.faixa {
+    background-color: #40A2E9;
+}
+
+.corD {
+    color: #40A2E9;
+}
+
+.destaque h4 {
+    background-color: #3e5385;
+}
+
+#design {
+    background-color: #1F2B46;
+}
+
+.linkado {
+    background:#3e5385;
+}
+
+.linkado:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1F2B46 0 -3px 0 inset;
+}
+
+/* Carrosel */
+.carrosel {
+    max-height: 400px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    /* border: 1px solid #ccc; */
+    
+}
+
+.conteudo-carrosel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-height: 400px;
+}
+
+.ccc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ccc img {
+   max-width: 90%;
+   height: auto;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Desing resposivo */
+#designResponsivo {
+    background-color: #1F2B46;
+}
+
+#designResponsivo article {
+    
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 80%;
+}
+
+#designResponsivo article p {
+    align-content: center;
+    padding: 10px;
+    max-width: 42%;
+}
+
+#designResponsivo article img {
+    max-width: 65%;
+}
+
+.multi {
+    background-color: black;
+}
+
+.etapas div {
+    background:#40A2E9;
+}
+
+.ajuste {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    #designResponsivo article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #designResponsivo  article p {
+        max-width: 100%;
+    }
+
+    #designResponsivo article img {
+        max-width: 100%;
+    }
+} 

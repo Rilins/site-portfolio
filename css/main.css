@@ -9,6 +9,10 @@ body * {
     color: var(--text-cor);
 }
 
+main {
+    margin-top: 70px;
+}
+
 :root{
     --bg-url: url(./imgs/bg-phone.jpg);
     --text-cor: white;
@@ -112,9 +116,19 @@ header nav {
 }
 
 footer {
+    color: white;
+    background-color: black;
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+footer i {
+    color: white;
+}
+
+footer a {
+    color: white;
 }
 
 

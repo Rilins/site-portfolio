@@ -1,0 +1,368 @@
+/* Padrão section principal */
+#principal article {
+    display: flex;
+    margin: 0 auto;
+    max-width: 70%;
+    align-items: center;
+}
+
+#principal article .ap-textos {
+    margin: 10px;
+}
+
+#principal article .ap-textos div {
+    padding: 10px;
+}
+
+#principal article .ap-textos div h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#principal article .ap-textos div p {
+    line-height: 1.5em;
+}
+
+#principal article .ap-imagem {
+    text-align: center;
+}
+
+#data {
+    margin: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #4682B4;
+}
+
+/* Padrão section sobre */
+#sobre {
+    margin: 30px 0;
+}
+
+#sobre article {
+    padding: 30px 15%;
+}
+
+#sobre article ul {
+    margin-left: 20px;
+}
+
+#sobre article ul li {
+    margin: 20px 10px;
+}
+
+#sobre article ul li h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#sobre article ul li p {
+    margin-left: 20px;
+    color: #808080;
+    max-width: 90%;
+}
+
+#sobre article ul li li {
+    list-style: none;
+}
+
+/* Padrão section pesquisa */
+#pesquisa .ps-btns {
+    padding: 10px;
+    margin-left: 15%;
+}
+
+#pesquisa .blocoEstudo {
+    display: none;
+    margin: 10px;
+}
+
+#pesquisa .blocoEstudo div {
+    padding: 10px;
+    text-align: center;
+}
+
+#pesquisa .blocoEstudo div h3 {
+    padding: 5px;
+    margin: 0 40%;
+    font-weight: 400;
+}
+
+#pesquisa .blocoEstudo div p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+#pesquisa .blocoEstudo .resumo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pesquisa .blocoEstudo .resumo .dados {
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    max-width: 400px;
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol li {
+    width: 154px;
+    height: 154px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol li p {
+    font-size: 14px;
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol li .corD {
+    font-weight: 600;
+}
+
+#pesquisa .blocoEstudo .resultado {
+    max-width: 474px;
+    max-height: 324px;
+    padding: 5px 20px;
+    margin: 0 5px;
+}
+
+#pesquisa .blocoEstudo .resultado h4 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#pesquisa .blocoEstudo .resultado ol {
+    list-style: none;
+    height: 174px;
+    padding: 10px;
+    display: flex;
+}
+
+#pesquisa .blocoEstudo .resultado ol li {
+    width: 50%;
+    margin: 0 10px;
+}
+
+#pesquisa .blocoEstudo.active {
+    display: block;
+}
+
+/* Padrão section desing */
+#design article {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#design .destaque h4 {
+    margin: 10px 0;
+    width: 256px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#design .destaque p {
+    padding: 10px;
+}
+
+#design article .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkado {
+    margin: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 48px;
+    padding: 0 16px;
+    transition: box-shadow 0.15s, transform 0.15s;
+    font-size: 18px;
+}
+
+.linkado a {
+    text-decoration: none;
+    color: white;
+}
+
+.linkado:hover {   
+    transform: translateY(-2px);
+}
+
+/* Padrão section pratica*/
+#pratica {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pratica .pr-pratica {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#pratica .pr-pratica p {
+    font-weight: 400;
+}
+
+#pratica .futuro {
+    margin: 20px;
+}
+
+#pratica .futuro h3 {
+    /*margin-left: 5px;*/
+    margin: 5px 135px;
+    text-decoration: underline;
+}
+
+#pratica .futuro div {
+    display: flex;
+    margin: 0 auto;
+}
+
+#pratica .futuro div p {
+    line-height: 1.5em;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.etapas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.etapas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow:  0 20px 4px rgba(0,0,0,0.1);
+}
+
+.etapas p {
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.etapa-num {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.faixa {
+    margin: 10px 0;
+    color: white;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Padrão section grata */
+#grata {
+    margin: 30px;
+    text-align: center;
+}
+
+#grata p {
+    color: #888480;
+}
+
+/* Tablets e telas pequenas*/
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #principal article {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #principal article .ap-textos {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    #pesquisa .ps-btns {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #pesquisa .blocoEstudo div h3 {
+        margin: 0 10%;
+    }
+
+    #pesquisa .blocoEstudo .resumo {
+        flex-direction: column;
+    }
+
+    #pesquisa .blocoEstudo .resumo .dados ol {
+        max-width: 100%;
+    }
+
+    #pesquisa .blocoEstudo .resumo .resultado {
+        max-width: 100%;
+    }
+
+    #pesquisa .blocoEstudo .resultado ol {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #design .galeria img {
+        width: 90%;
+    }
+
+    .etapas {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    #principal article {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    #sobre article {
+        padding: 20px;
+    }
+
+    #pesquisa .ps-btns .button {
+        width: 100%;
+    }
+
+    #pesquisa .blocoEstudo div h3 {
+        margin: 0 10%;
+    }
+}

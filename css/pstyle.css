@@ -1,0 +1,122 @@
+html {
+    background: var(--bg-pag);
+}
+
+body {
+    color: var(--text-cor);
+}
+
+:root {
+    --bg-pag: darkslateblue; /* indigo, rebeccapurple, darkslateblue */
+    --text-cor: white;
+    --barra-roxa: #A04FFD;
+    --barra-preta: #000000;
+    --barra-branco: #ffffff;
+    --cor-objetivo: #2c2b2b;
+    --final: #A04FFD;
+    --pxsetps: #2c2b2b;
+}
+
+.light {
+    --bg-pag: transparent;
+    --text-cor: black;
+    --barra-preta: #2c2b2b;
+    --barra-branco: #000000;
+    --cor-objetivo: #BD8AFF;
+    --final: #000000;
+    --pxsetps: #C277FD;
+}
+
+#principal article .ap-textos div h3 {
+    color: var(--barra-roxa);
+}
+
+#sobre article {
+    background: black;
+}
+
+#sobre article ul li {
+    color: var(--barra-roxa);
+}
+
+/* Estilo botão dos estudos de pesquisa na section pesquisa*/
+#pesquisa .ps-btns .button {
+    margin: 5px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #6C38B0, #BD8AFF);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+#pesquisa .ps-btns .button:hover {
+    background: linear-gradient(135deg, #BD8AFF, #6C38B0);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+#pesquisa .ps-btns .button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#pesquisa .blocoEstudo div h3 {
+    color: white;
+    background: var(--cor-objetivo);
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol li {
+    border: 1px solid #BD8AFF;
+    border-radius: 100%;
+}
+
+#pesquisa .blocoEstudo .resultado h4 {
+    color: var(--barra-roxa);
+}
+
+#pesquisa .blocoEstudo .resumo .dados ol li .corD {
+    color: #1976D2;
+}
+
+#pesquisa .blocoEstudo .resultado ol li p {
+    margin: 0 40px;
+    padding: 10px 0 0;
+    color: white;
+    text-align: center;
+    background: url(../imgs/popucha/triangulo_popucha.png) no-repeat center;
+}
+
+#design article {
+    background-color: black;
+}
+
+#design article .destaque h4 {
+    color: white;
+    background: #6C38B0;
+}
+
+#design article .destaque p {
+    color: white;
+}
+
+#design article .galeria .linkado {
+    background: #A04FFD;
+}
+
+#desing .linkado:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #6C38B0 0 -3px 0 inset;
+}
+
+.etapas div {
+    color: white;
+    background: var(--pxsetps);
+}
+
