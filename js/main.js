@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading footer', error));
 
-    const homelink = document.getElementById('home-link');
-    if (homelink) {
-        homelink.setAttribute('href',`${path}/index.html`);
+    const homeLink = document.getElementById('home-link');
+    if (homeLink) {
+        homeLink.setAttribute('href',`${path}index.html`);
     }
 });
 
