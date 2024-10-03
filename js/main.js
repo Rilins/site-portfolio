@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.querySelector('header').innerHTML = data;
+
+            const homeLink = document.getElementById('home-link');
+            if (homeLink) {
+                homeLink.setAttribute('href', '/index.html');
+            }
+
         })
         .catch(error => console.error('Error loading navbar:', error));
 
@@ -18,10 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading footer', error));
 
-    const homeLink = document.getElementById('home-link');
-    if (homeLink) {
-        homeLink.setAttribute('href', '/index.html');
-    }
 });
 
 // Evento fecha o menu ao clicar fora
