@@ -1,19 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    const path = window.location.pathname.includes('/pags/') ? '..' : '.';
+
     // Função para carregar a barra de navegação
-    fetch('../partials/navbar.html')
+    fetch(`${path}/partials/navbar.html`)
         .then(response => response.text())
         .then(data => {
             document.querySelector('header').innerHTML = data;
-
-            // Adicionar botões específicos após a barra de navegação ser carregada
-            const navbarLinks = document.getElementById('navbar-links');
-            if (navbarLinks) {
-                addPageSpecificButton(navbarLinks);
-            }
         })
         .catch(error => console.error('Error loading navbar:', error));
 
-    fetch('../partials/footer.html')
+    fetch('${path}/partials/footer.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('footer').innerHTML = data;   
