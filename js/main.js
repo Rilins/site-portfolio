@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading navbar:', error));
 
-    fetch('${path}/partials/footer.html')
+    fetch(`${path}/partials/footer.html`)
         .then(response => response.text())
         .then(data => {
             document.querySelector('footer').innerHTML = data;   
