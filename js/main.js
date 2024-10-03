@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const homeLink = document.getElementById('home-link');
             if (homeLink) {
-                homeLink.setAttribute('href', '/index.html');
+                homeLink.setAttribute('href', `${path}/index.html`);
             }
 
         })
