@@ -3,6 +3,28 @@ body {
     height: 100vh;
 }
 
+:root {
+    --bg-url: url(../imgs/bg-phone.jpg);
+    --text-cor: white;
+    --cor-efeito-transparente: rgba(255, 255, 255, 0.03);
+    --cor-efeito-tranparente-hover: rgba(0, 0, 0, 0.02);
+    --cor-efeito-roxo: rgba(186, 102, 241, 0.178);
+    --cor-efeito-roxo-hover: rgba(185, 102, 241, 0.090);
+    --cor-contorno: rgba(255, 255, 255, 0.5);
+    --cor-luz: rgba(255, 255, 255, 0.02);
+}
+
+.light {
+    --bg-url: url(../imgs/bg-phone-light.png);
+    --text-cor: black;
+    --cor-efeito-transparente: rgba(255, 255, 255, 0.03);
+    --cor-efeito-tranparente-hover: rgba(0, 0, 0, 0.02);
+    --cor-efeito-roxo: rgba(186, 102, 241, 0.178);
+    --cor-efeito-roxo-hover: rgba(186, 102, 241, 0.03);
+    --cor-contorno: rgba(255, 255, 255, 0.5);
+    --cor-luz: rgba(255, 255, 255, 0.02);
+}
+
 .apresentacao {
     background: var(--cor-efeito-transparente);
     border-radius: 8px;
