@@ -298,6 +298,10 @@
         font-size: 14px;
     }
 
+    .faixa {
+        width: 300px;
+    }
+
     #principal article {
         flex-direction: column-reverse;
         align-items: center;

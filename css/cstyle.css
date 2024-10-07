@@ -142,4 +142,8 @@ body {
         padding: 0 15px;
     }
 
+    .ap-imagem img {
+        max-width: 100%;
+    }
+
 }
